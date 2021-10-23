@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Timeline Player</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="vendors/styles/TweenTime/editor.css" />
+    <link
+      href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="style/index.css" />
+  </head>
+  <body>
+    <div id="menu" class="close">
+      <button class="btn btn-primary" type="button" id="menuToggle">
+        <img
+          src="./images/icons/angle_double_right_64px.png"
+          width="32"
+          height="32"
+          alt="menu toggle"
+        />
+      </button>
+
+      <div id="componentContainer">
+        <div id="component1" class="component" data-type="image">Image</div>
+        <div id="component1" class="component" data-type="Text">Text</div>
+        <div id="component1" class="component" data-type="Button">Button</div>
+        <div id="component1" class="component" data-type="Option 1">
+          Option 1
+        </div>
+        <div id="component1" class="component" data-type="Option 2">
+          Option 2
+        </div>
+        <div id="component1" class="component" data-type="Option 3">
+          Option 3
+        </div>
+        <div id="component1" class="component" data-type="Option 4">
+          Option 4
+        </div>
+      </div>
+    </div>
+    <div class="content-wrapper" id="screen">
+      <!-- <figure class="thumb">
+        <div class="thumb__top">
+          <div class="thumb__image">
+            <img src="images/forest.jpg" alt="Magical forest" />
+            <div class="thumb__overlay"></div>
+            <div class="thumb__zoom"></div>
+          </div>
+        </div>
+        <figcaption class="thumb__caption">
+          <div class="thumb__title">Magical forest</div>
+          <div class="thumb__credit">
+            By
+            <a href="https://unsplash.com/jonasnilssonlee" target="_blank"
+              >Jonas Nilsson Lee</a
+            >
+          </div>
+        </figcaption>
+      </figure> -->
+    </div>
+
+    <!-- TweenTime dependencies -->
+    <script src="vendors/scripts/bower_components/gsap/src/uncompressed/TweenMax.js"></script>
+    <script src="vendors/scripts/bower_components/gsap/src/uncompressed/TimelineMax.js"></script>
+    <script src="vendors/scripts/bower_components/js-signals/dist/signals.js"></script>
+
+    <!-- Editor dependencies -->
+    <script src="vendors/scripts/bower_components/jquery/dist/jquery.js"></script>
+    <script src="vendors/scripts/bower_components/spectrum/spectrum.js"></script>
+    <script src="vendors/scripts/bower_components/d3/d3.js"></script>
+    <script src="vendors/scripts/bower_components/lodash/lodash.js"></script>
+    <script src="vendors/scripts/bower_components/draggable-number.js/dist/draggable-number.js"></script>
+    <script src="vendors/scripts/bower_components/FileSaver/FileSaver.js"></script>
+
+    <!-- TweenTime & Editor -->
+    <script src="vendors/scripts/TweenTime/TweenTime.Core.min.js"></script>
+    <script src="vendors/scripts/TweenTime/TweenTime.Editor.min.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script/index.js"></script>
+  </body>
+</html>
