@@ -402,7 +402,7 @@ function addDroppable() {
       if (window.state.d.draggingType.toLowerCase() === "text") {
         element = `<p id="${L_length}" class='layer-component' style="${_style}">Text</p>`;
       } else if (window.state.d.draggingType.toLowerCase() === "image") {
-        element = `<img id="${L_length}" class='layer-component' src='' alt='image' style="${_style}" />`;
+        element = `<img id="${L_length}" class='layer-component' src='images/forest.jpg' alt='image' style="${_style}" />`;
       } else if (window.state.d.draggingType.toLowerCase() === "image") {
         element = `<Button id="${L_length}" class='layer-component' style="${_style}"></Button>`;
       } else {
@@ -445,7 +445,7 @@ function animate() {
   const { eL, d } = window.state;
   const { tweenTime } = d;
   const elementsName = Object.keys(eL);
-console.log('elementsName', elementsName)
+// console.log('elementsName', elementsName)
   elementsName.map((o, i) => {
     const {
       left,
@@ -456,7 +456,7 @@ console.log('elementsName', elementsName)
       opacity,
       rotate,
     } = tweenTime.getValues(Number(o));
-    console.log("animate", top, left, width, scale, opacity, rotate);
+    // console.log("animate", top, left, width, scale, opacity, rotate);
     $(eL[o]).css({
       transform: `scale(${scale},${scale}) rotate(${rotate}deg)`,
       left: `${left}px`,
